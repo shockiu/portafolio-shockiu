@@ -1,0 +1,13 @@
+.highlight {
+    background-image: linear-gradient($jasmine, $jasmine);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
+    transition: background-size .5s, background-position .5s ease-in .5s;
+}
+
+.highlight:hover {
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    transition: background-position .5s, background-size .5s ease-in .5s;
+}

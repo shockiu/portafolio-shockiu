@@ -1,0 +1,42 @@
+.container  {
+    height: 100vh;
+    /*
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    */
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+.presentation {
+    height: 100vh;
+    background-color: $dark-purple;
+}
+
+.about {
+    background-color: $dark-purple;
+    height: 50vh;
+    font-size: 20px;
+    font-weight: $font-weigth-600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects{
+    background-color: $dark-purple;
+    height: 100vh;
+}
+
+.contact {
+    background-color: $cadet-blue;;
+    color: $dark-purple;
+    height: 40vh;
+    font-size: 40px;
+    font-weight: $font-weigth-600;
+}

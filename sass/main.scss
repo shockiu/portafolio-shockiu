@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700&display=swap');
+
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./themes/dark";
+@import "./themes/ligth";
+
+@import "./base/reset";
+@import "./base/animations";
+
+@import "./components/highlight";
+@import "./components/letter-color";
+
+@import "./layout/navigation";
+@import "./layout/title";
+@import "./layout/about";
+
+@import "./pages/home";
+
+/*
+BASE
+
+@import "./base/body";
+
+COMPONENTS
+@import "./components/accordoin";
+@import "./components/title";
+
+LAYOUT
+@import "./layout/hero";
+@import "./layout/footer";
+
+PAGES
+@import "./pages/faq";
+*/

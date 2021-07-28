@@ -1,0 +1,38 @@
+
+.menu {
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    column-gap: 50px;
+    /*
+    background-color: #7639c7;
+    */
+    align-items: center;
+    height: 60px;
+}
+
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: $font-weigth-600;
+}
+
+.menu__switch-icon {
+    text-align: center;
+}
+
+.menu__rocket {
+    text-align: center; 
+    margin-top: 20px;
+} 

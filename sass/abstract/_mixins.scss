@@ -1,0 +1,18 @@
+$breakpoints: (
+    'x-small': 375px,
+    'lg-small': 570px,
+    'small': 900px,
+    'large': 1440px,
+)!default;
+
+@mixin break($breakpoint) {
+    @if map-has-key($breakpoints , $breakpoint) {
+        @media (max-width: map-get($breakpoints , $breakpoint )) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Ese breakpoint no se encuentra en la lista";
+    }
+}
