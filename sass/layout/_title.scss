@@ -2,15 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
     margin-top: 50px;
+}
+
+.presentation__intro {
+    width: 60%;
 }
 
 .presentation__desc {
     font-size: 40px;
     font-weight: $font-weigth-700;
-    width: 60%;
-    line-height: 60px;
+    line-height: 40px;
+}
+
+.presentation__parraf {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    width: 90%;
 }
 
 .presentation__img {

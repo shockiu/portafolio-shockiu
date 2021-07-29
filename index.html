@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Galeano - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
-        <section class="presentation">
+        <div class="section presentation">
             <nav class="menu">
                 <picture class="menu__rocket">
                     <img src="./assets/startup.png" alt="" width="50">
@@ -39,12 +40,11 @@
                 </div>
             </nav>
             <div class="presentation__title">
-                <h1 class="presentation__desc">
-                    Hola soy Carlos Galeano <span class="highlight">Front end Developer</span>
-                </h1>
-                <div class="presentation__divider">
-                    /
+                <div class="presentation__intro">
+                    <h1 class="presentation__desc">Front end Developer<span class="highlight"> Carlos Galeano</span></h1>
+                    <p class="presentation__parraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam illum. Adipisci odio voluptatum quas mollitia delectus culpa, vitae molestiae numquam</p>
                 </div>
+
                 <picture class="presentation__img" style="width: 300px; height: 300px;" >
                     <svg width="638" height="480" viewBox="0 0 638 480" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="astronaut" clip-path="url(#clip0)">
@@ -113,24 +113,90 @@
                     flecha para abajo
                 -->
             </div>
-        </section>
-        <section class="about">
+        </div>
+        <div class="section about js-scroll slide-right">
             <div class="about__container">
-                <h2 class="about__desc blue-cadet">
-                    Soy un desarrollador front end self-taugth, con más de un año en aprendizajes y expeiencias
-                </h2>
-                <picture class="about__thumbnail blue-cadet" >
-                    <img class="about__img" src="./assets/cheems-bebe.jpg" alt="" width="80">
+                <picture class="about__thumbnail" >
+                    <img class="about__img" src="./assets/student.jpg" alt="">
                 </picture>
+                <h2 class="about__desc blue-cadet">                    
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur sed veniam adipisci delectus accusamus suscipit quidem aliquam culpa iste similique autem dolores esse dolore, magni id rerum. Ab, accusamus.
+                </h2>
             </div>
-        </section>
-        <section class="projects">
-            Lista tremenda de los proyectos (incluye el mismo portafolio)
-        </section>
-        <section class="contact">
+        </div>
+        <div class="section projects js-scroll slide-in-right">
+            <div class="projects-container">
+                <div class="project__card">
+                    <picture class="project__thumbnail">
+                        <img class="project__img" src="./assets/mika-baumeister-HUyICL8qbEE-unsplash.jpg" alt="">
+                    </picture>
+                    <div class="project__body">
+                        <h4 class="project__title">
+                            Cohete a marte
+                        </h4>
+                        <p class="project__desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam quia odio eos quam corporis nihil, labore rerum ab sequi eius accusamus laudantium reiciendis nesciunt blanditiis, maiores veritatis illum dolorem!
+                        </p>
+                        <div class="project__actions">
+                            <button class="btn btn__pasticho">
+                                <a class="btn__link" href="" target="_blank">Código <i class="fab fa-github"></i></a>
+                            </button>
+                            <button class="btn btn__jasmine">
+                                <a class="btn__link" href="" target="_blank">En vivo <i class="fas fa-eye"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="project__card">
+                    <picture class="project__thumbnail">
+                        <img class="project__img" src="./assets/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="">
+                    </picture>
+                    <div class="project__body">
+                        <h4 class="project__title">
+                            Juego
+                        </h4>
+                        <p class="project__desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam quia odio eos quam corporis nihil, labore rerum ab sequi eius accusamus laudantium reiciendis nesciunt blanditiis, maiores veritatis illum dolorem!
+                        </p>
+                        <div class="project__actions">
+                            <button class="btn btn__pasticho">
+                                <a class="btn__link" href="" target="_blank">Código <i class="fab fa-github"></i></a>
+                            </button>
+                            <button class="btn btn__jasmine">
+                                <a class="btn__link" href="" target="_blank">En vivo <i class="fas fa-eye"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__card">
+                    <picture class="project__thumbnail">
+                        <img class="project__img" src="./assets/walkator-klMii3cR9iI-unsplash.jpg" alt="">
+                    </picture>
+                    <div class="project__body">
+                        <h4 class="project__title">
+                            Jugo
+                        </h4>
+                        <p class="project__desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam quia odio eos quam corporis nihil, labore rerum ab sequi eius accusamus laudantium reiciendis nesciunt blanditiis, maiores veritatis illum dolorem!
+                        </p>
+                        <div class="project__actions">
+                            <button class="btn btn__pasticho">
+                                <a class="btn__link" href="" target="_blank">Código <i class="fab fa-github"></i></a>
+                            </button>
+                            <button class="btn btn__jasmine">
+                                <a class="btn__link" href="" target="_blank">En vivo <i class="fas fa-eye"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+        <div class="section contact js-scroll slide-in-left">
             Cuarto
-        </section>
+        </div>
     </div>
-    <script defer src="./js/index.js"></script>
+    <script defer type="module" src="./js/index.js"></script>
 </body>
 </html>

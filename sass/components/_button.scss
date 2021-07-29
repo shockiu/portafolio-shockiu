@@ -1,0 +1,17 @@
+.btn {
+    width: 40%;
+    border-radius: 8px;
+    outline: none;
+    .btn__link {
+        text-decoration: none;   
+    }
+}
+
+.btn__pasticho {
+    background-color: $pistachio;
+    color: $dark-purple;
+}
+.btn__jasmine {
+    background-color: $jasmine;
+    color: $dark-purple;
+}

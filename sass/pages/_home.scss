@@ -6,7 +6,7 @@
     */
 }
 
-section {
+.section {
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -18,8 +18,7 @@ section {
 }
 
 .about {
-    background-color: $dark-purple;
-    height: 50vh;
+    height: 40vh;
     font-size: 20px;
     font-weight: $font-weigth-600;
     display: flex;
@@ -30,7 +29,10 @@ section {
 
 .projects{
     background-color: $dark-purple;
-    height: 100vh;
+    height: 70vh;
+    padding: 40px;
+    display: grid;
+    justify-content: center;
 }
 
 .contact {

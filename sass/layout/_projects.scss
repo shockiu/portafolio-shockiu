@@ -1,0 +1,41 @@
+.projects-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
+} 
+
+.project__card {
+    display: grid;
+    grid-template-rows: 120px .6fr;
+}
+
+.project__thumbnail {
+    height: 100%;
+    width: 100%;
+}
+
+.project__img {
+    width: 100%;
+    height: 100%;
+}
+
+.project__body {
+    .project__title {
+        text-transform: capitalize;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .project__desc {
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .project__actions{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
