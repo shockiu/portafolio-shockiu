@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Galeano - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -28,12 +29,13 @@
                         <a href="" class="menu__link">/Resume</a>
                     </li>
                 </ul>
-                <div class="menu__switch-icon">
-                    slide
-                    <!--
-
-                        <img src="./assets/moon.png" alt="" width="50">
-                    -->
+                <div class="menu__switch-theme">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>    
                 </div>
             </nav>
             <div class="presentation__title">
@@ -98,7 +100,14 @@
                     </svg>                    
                 </picture>
             </div>
-            <div>
+            <div class="next__section">
+                <svg width="65" height="77" viewBox="0 0 65 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="arrows">
+                        <path id="arrow1" d="M34.2253 61.0577C33.4526 62.3755 31.5474 62.3755 30.7747 61.0577L6.12012 19.0117C5.33832 17.6784 6.29979 16 7.84539 16L57.1546 16C58.7002 16 59.6617 17.6784 58.8799 19.0117L34.2253 61.0577Z" fill="#163BC0"/>
+                        <path id="arrow2" d="M34.2253 74.0577C33.4526 75.3755 31.5474 75.3755 30.7747 74.0577L6.12012 32.0117C5.33832 30.6784 6.29979 29 7.84539 29L57.1546 29C58.7002 29 59.6617 30.6784 58.8799 32.0117L34.2253 74.0577Z" fill="#805BEA" fill-opacity="0.65"/>
+                    </g>
+                </svg>
+                    
                 <!--
 
                     flecha para abajo
