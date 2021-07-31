@@ -4,21 +4,24 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
 }
 
 .section {
-    height: 100vh;
     scroll-snap-align: start;
 }
 
 
 .presentation {
-    height: 100vh;
     background-color: $dark-purple;
 }
 
 .about {
-    height: 40vh;
     font-size: 20px;
     font-weight: $font-weigth-600;
     display: flex;
@@ -29,7 +32,6 @@
 
 .projects{
     background-color: $dark-purple;
-    height: 70vh;
     padding: 40px;
     display: grid;
     justify-content: center;
@@ -38,7 +40,8 @@
 .contact {
     background-color: $cadet-blue;;
     color: $dark-purple;
-    height: 40vh;
     font-size: 40px;
     font-weight: $font-weigth-600;
+    flex-shrink: 0;
+    margin-top: 20px;
 }

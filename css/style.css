@@ -160,22 +160,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; }
+  margin-top: 40px; }
 
 .btn {
   width: 40%;
-  border-radius: 8px;
-  outline: none; }
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  padding: 2px;
+  transition: all .5s; }
   .btn .btn__link {
     text-decoration: none; }
 
 .btn__pasticho {
   background-color: #a5c882;
-  color: #1e152a; }
+  transition: all .6s; }
+  .btn__pasticho .btn__link {
+    color: #1e152a; }
 
 .btn__jasmine {
-  background-color: #f7dd72;
-  color: #1e152a; }
+  background-color: transparent;
+  border: 1px solid #a5c882;
+  transition: all .6s; }
+  .btn__jasmine .btn__link {
+    color: #a5c882; }
+
+.btn:hover {
+  transform: translateY(-3px); }
+
+.btn__jasmine:hover {
+  background-color: #7ca752; }
+  .btn__jasmine:hover .btn__link {
+    color: #0d0913; }
+
+.btn__pasticho:hover {
+  background-color: #7ca752; }
+  .btn__pasticho:hover .btn__link {
+    color: #0d0913; }
 
 .menu {
   display: grid;
@@ -286,7 +307,8 @@ body {
 
 .project__thumbnail {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  transition: all .2s; }
 
 .project__img {
   width: 100%;
@@ -308,23 +330,28 @@ body {
   justify-content: space-evenly;
   align-items: center; }
 
+.project__thumbnail:hover {
+  transform: rotate(-2deg) translateY(-5px) scale(1.025); }
+
 .container {
   height: 100vh;
   /*
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    */ }
+    */
+  display: flex;
+  flex-direction: column; }
+
+.main-content {
+  flex: 1 0 auto; }
 
 .section {
-  height: 100vh;
   scroll-snap-align: start; }
 
 .presentation {
-  height: 100vh;
   background-color: #1e152a; }
 
 .about {
-  height: 40vh;
   font-size: 20px;
   font-weight: 600;
   display: flex;
@@ -334,7 +361,6 @@ body {
 
 .projects {
   background-color: #1e152a;
-  height: 70vh;
   padding: 40px;
   display: grid;
   justify-content: center; }
@@ -342,9 +368,10 @@ body {
 .contact {
   background-color: #5ab1bb;
   color: #1e152a;
-  height: 40vh;
   font-size: 40px;
-  font-weight: 600; }
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 20px; }
 
 /*
 BASE

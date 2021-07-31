@@ -1,17 +1,47 @@
 .btn {
     width: 40%;
-    border-radius: 8px;
+    border-radius: 4px;
+    border-style: none;
     outline: none;
+    padding: 2px;
+    transition: all .5s;
     .btn__link {
-        text-decoration: none;   
+        text-decoration: none;
     }
+   
 }
 
 .btn__pasticho {
     background-color: $pistachio;
-    color: $dark-purple;
+    transition: all .6s;
+    .btn__link {
+        color: $dark-purple;
+    }
 }
 .btn__jasmine {
-    background-color: $jasmine;
-    color: $dark-purple;
+    background-color: transparent;
+    border: 1px solid $pistachio;
+    .btn__link {
+        color: $pistachio;
+    }
+    transition: all .6s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn__jasmine:hover {
+    background-color: #7ca752;
+    .btn__link {
+        color: #0d0913;
+    }
+}
+
+.btn__pasticho:hover {
+    background-color: #7ca752;
+    .btn__link {
+        color: #0d0913;
+    }
 }
