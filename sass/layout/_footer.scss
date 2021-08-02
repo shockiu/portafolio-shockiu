@@ -3,6 +3,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: $cadet-blue;
+    background-color: #140e1d;
+    .menu__footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .menu__item-footer{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .menu__link-footer{
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: $font-weigth-600;
+            color: $cadet-blue;
+        }
+    }
     .social-media {
         font-size: 12px;
         margin-top: 10px;
@@ -10,7 +28,7 @@
     }
     .divider {
         width: 90%;
-        border: 1px solid black;
+        border: .25px solid #4e6766;
     }
     .by-author {
         font-size: 12px;

@@ -294,6 +294,12 @@ body {
     padding-left: 20px;
     line-height: 25px; }
 
+.projects__title {
+  font-size: 32px;
+  margin-top: 14px;
+  text-align: center;
+  margin-bottom: 26px; }
+
 .projects-container {
   display: grid;
   grid-template-columns: 250px 250px 250px;
@@ -340,8 +346,16 @@ body {
   margin-top: 20px; }
 
 .contact__desc {
-  justify-self: center;
+  place-self: center;
   font-size: 28px; }
+  .contact__desc .contact__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 16px; }
+  .contact__desc .contact__parraf {
+    font-size: 18px;
+    width: 70%;
+    line-height: 25px; }
 
 .contact__form {
   display: flex;
@@ -355,7 +369,7 @@ body {
 
 .contact__element-label {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 600; }
 
 .contact__element-input {
@@ -385,14 +399,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #5ab1bb;
+  background-color: #140e1d; }
+  .footer .menu__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .footer .menu__footer .menu__item-footer {
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .footer .menu__footer .menu__link-footer {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: #5ab1bb; }
   .footer .social-media {
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 10px; }
   .footer .divider {
     width: 90%;
-    border: 1px solid black; }
+    border: .25px solid #4e6766; }
   .footer .by-author {
     font-size: 12px;
     margin-top: 10px;
