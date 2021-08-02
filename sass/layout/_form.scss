@@ -2,10 +2,12 @@
     padding: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
 
 .contact__desc {
-    place-self: center;
+    justify-self: center;
+    font-size: 28px;
 }
 
 .contact__form {
@@ -17,10 +19,13 @@
     display: flex;
     flex-direction: column;
     box-sizing: content-box;
+    margin-top: 10px;
 }
 
 .contact__element-label {
-    font-size: 24px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: $font-weigth-600;
 }
 
 .contact__element-input {
@@ -29,7 +34,7 @@
     transition: all 1s;
     text-align: justify;
     padding-left: 25px;
-    border-radius: 5px;
+    border-radius: 4px;
     height: 40px;
     &::placeholder {
         font-weight: $font-weigth-400;
@@ -44,4 +49,9 @@
 
 .contact__element-input:focus{
     border-color: rgb(117, 50, 50);
+}
+
+.btn-sumbit {
+    height: 40px;
+    font: 16px;
 }

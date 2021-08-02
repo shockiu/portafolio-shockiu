@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .social-media {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .divider {
+        width: 90%;
+        border: 1px solid black;
+    }
+    .by-author {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .heart {
+        color: red;
+    }
+}
+
