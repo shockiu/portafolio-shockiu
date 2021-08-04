@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700&display=swap");
 /* TYPOGRAPHY */
 /*  */
+/*
+    1045px
+    740
+    620
+*/
 /* SCSS RGB */
+/* NEW DARK THEME */
+/* GRADIENT */
 /* SCSS RGB */
 * {
   margin: 0;
@@ -189,10 +196,29 @@ body {
 .btn__presentation {
   background-color: transparent;
   border: 1px solid #5ab1bb;
-  height: 36px;
-  font-size: 16px; }
+  height: 36px; }
   .btn__presentation .btn__link {
     color: #5ab1bb; }
+  @media (max-width: 1440px) {
+    .btn__presentation {
+      font-size: 18px;
+      height: 40px; } }
+  @media (max-width: 1024px) {
+    .btn__presentation {
+      font-size: 16px;
+      height: 40px; } }
+  @media (max-width: 900px) {
+    .btn__presentation {
+      font-size: 14px;
+      height: 38px; } }
+  @media (max-width: 740px) {
+    .btn__presentation {
+      font-size: 13px;
+      height: 36px; } }
+  @media (max-width: 650px) {
+    .btn__presentation {
+      width: 100%;
+      font-size: 14px; } }
 
 .btn:hover {
   transform: translateY(-3px); }
@@ -246,34 +272,109 @@ body {
 
 .presentation__title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-right: 50px;
   padding-left: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  transition: all 2s; }
+  @media (max-width: 1440px) {
+    .presentation__title {
+      justify-content: space-around; } }
+  @media (max-width: 1024px) {
+    .presentation__title {
+      justify-content: space-between; } }
+  @media (max-width: 650px) {
+    .presentation__title {
+      flex-direction: column; } }
 
 .presentation__intro {
   width: 60%; }
+  @media (max-width: 1440px) {
+    .presentation__intro {
+      padding-left: 80px; } }
+  @media (max-width: 1024px) {
+    .presentation__intro {
+      padding-left: 70px; } }
+  @media (max-width: 900px) {
+    .presentation__intro {
+      padding-left: 50px; } }
+  @media (max-width: 740px) {
+    .presentation__intro {
+      padding-left: 35px; } }
+  @media (max-width: 650px) {
+    .presentation__intro {
+      padding: 0; } }
 
 .presentation__desc {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px; }
+  font-weight: 700; }
+  @media (max-width: 1440px) {
+    .presentation__desc {
+      font-size: 52px;
+      line-height: 62px; } }
+  @media (max-width: 1024px) {
+    .presentation__desc {
+      font-size: 40px;
+      line-height: 56px; } }
+  @media (max-width: 900px) {
+    .presentation__desc {
+      font-size: 36px;
+      line-height: 48px; } }
+  @media (max-width: 740px) {
+    .presentation__desc {
+      font-size: 30px;
+      line-height: 40px; } }
+  @media (max-width: 650px) {
+    .presentation__desc {
+      text-align: center; } }
 
 .presentation__parraf {
-  font-size: 16px;
   line-height: 24px;
-  margin-top: 36px;
-  width: 90%; }
+  margin-top: 36px; }
+  @media (max-width: 1440px) {
+    .presentation__parraf {
+      font-size: 18px;
+      width: 70%; } }
+  @media (max-width: 1024px) {
+    .presentation__parraf {
+      font-size: 16px;
+      line-height: 22px;
+      width: 75%; } }
+  @media (max-width: 900px) {
+    .presentation__parraf {
+      font-size: 14px;
+      line-height: 20px; } }
+  @media (max-width: 740px) {
+    .presentation__parraf {
+      font-size: 13px;
+      line-height: 18px;
+      width: 80%; } }
+  @media (max-width: 650px) {
+    .presentation__parraf {
+      font-size: 14px;
+      text-align: center;
+      width: 100%; } }
 
 .presentation__img {
-  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*
-    background: linear-gradient(45deg, $dark-purple, #1f0e35 90%);
-    */ }
+  transition: all 2s; }
+  @media (max-width: 1440px) {
+    .presentation__img {
+      width: 350px;
+      height: 350px; } }
+  @media (max-width: 1024px) {
+    .presentation__img {
+      width: 300px;
+      height: 300px; } }
+  @media (max-width: 900px) {
+    .presentation__img {
+      width: 250px;
+      height: 250px; } }
+  @media (max-width: 740px) {
+    .presentation__img {
+      width: 200px;
+      height: 200px; } }
 
 .presentation__actions {
   margin-top: 20px; }
@@ -462,8 +563,7 @@ body {
   scroll-snap-align: start; }
 
 .presentation {
-  background-color: #1e152a;
-  height: 80vh; }
+  background-color: #1e152a; }
 
 .about {
   font-size: 20px;
@@ -472,7 +572,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 36px; }
+  margin-top: 80px; }
 
 .projects {
   background-color: #0d0617;

@@ -1,37 +1,112 @@
 .presentation__title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-right: 50px;
     padding-left: 50px;
     margin-top: 50px;
+    @include break('lg-large') {
+        justify-content: space-around;
+    }
+    @include break('large') {
+        justify-content: space-between;
+    }
+    @include break('middle') {
+        flex-direction: column;
+    }
+    transition: all 2s;
 }
 
 .presentation__intro {
     width: 60%;
+    @include break('lg-large') {
+        padding-left: 80px;
+    }
+    @include break('large') {
+        padding-left: 70px;
+    }
+    @include break('lg-small') {
+        padding-left: 50px;
+    }
+    @include break('x-middle') {
+        padding-left: 35px;
+    }
+    @include break('middle') {
+        padding: 0;
+    }
 }
 
 .presentation__desc {
-    font-size: 40px;
     font-weight: $font-weigth-700;
-    line-height: 50px;
+    @include break('lg-large') {
+        font-size: 52px;
+        line-height: 62px;
+    }
+    @include break('large') {
+        font-size: 40px;
+        line-height: 56px;
+    }
+    @include break('lg-small') {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    @include break('x-middle') {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include break('middle') {
+        text-align: center;
+    }
 }
 
 .presentation__parraf {
-    font-size: 16px;
     line-height: 24px;
     margin-top: 36px;
-    width: 90%;
+    @include break('lg-large') {
+        font-size: 18px;
+        width: 70%;
+    }
+    @include break('large') {
+        font-size: 16px;
+        line-height: 22px;
+        width: 75%;
+    }
+    @include break('lg-small') {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @include break('x-middle') {
+        font-size: 13px;
+        line-height: 18px;
+        width: 80%;
+    }
+    @include break('middle') {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .presentation__img {
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*
-    background: linear-gradient(45deg, $dark-purple, #1f0e35 90%);
-    */
+    transition: all 2s;
+    @include break('lg-large') {
+        width: 350px;
+        height: 350px;
+    }
+    @include break('large') {
+        width: 300px;
+        height: 300px;
+    }
+    @include break('lg-small') {
+        width: 250px;
+        height: 250px;
+    }
+    @include break('x-middle') {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .presentation__actions {

@@ -31,9 +31,28 @@
     background-color: transparent;
     border: 1px solid $cadet-blue;
     height: 36px;
-    font-size: 16px;
     .btn__link {
         color: $cadet-blue;
+    }
+    @include break('lg-large') {
+        font-size: 18px;
+        height: 40px;
+    }
+    @include break('large') {
+        font-size: 16px;
+        height: 40px;
+    }
+    @include break('lg-small') {
+        font-size: 14px;
+        height: 38px;
+    }
+    @include break('x-middle') {
+        font-size: 13px;
+        height: 36px;
+    }
+    @include break('middle') {
+        width: 100%;
+        font-size: 14px;
     }
 }
 

@@ -1,9 +1,18 @@
 $breakpoints: (
     'x-small': 375px,
-    'lg-small': 570px,
-    'small': 900px,
-    'large': 1440px,
+    'small': 570px,
+    'middle': 650px,
+    'x-middle': 740px,
+    'lg-small': 900px,
+    'large': 1024px,
+    'lg-large': 1440px,
 )!default;
+
+/*
+    1045px
+    740
+    620
+*/
 
 @mixin break($breakpoint) {
     @if map-has-key($breakpoints , $breakpoint) {
