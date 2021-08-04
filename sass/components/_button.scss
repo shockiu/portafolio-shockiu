@@ -27,6 +27,16 @@
     transition: all .6s;
 }
 
+.btn__presentation {
+    background-color: transparent;
+    border: 1px solid $cadet-blue;
+    height: 36px;
+    font-size: 16px;
+    .btn__link {
+        color: $cadet-blue;
+    }
+}
+
 .btn:hover {
     transform: translateY(-3px);
 }
@@ -43,5 +53,12 @@
     background-color: #7ca752;
     .btn__link {
         color: #0d0913;
+    }
+}
+
+.btn__presentation:hover {
+    background-color: $cadet-blue;
+    .btn__link {
+        color: $dark-purple;
     }
 }

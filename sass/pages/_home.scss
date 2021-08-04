@@ -19,6 +19,7 @@
 
 .presentation {
     background-color: $dark-purple;
+    height: 80vh;
 }
 
 .about {
@@ -28,10 +29,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 36px;
 }
 
 .projects{
-    background-color: $dark-purple;
+    background-color: #0d0617;;
     padding: 40px;
     display: grid;
     justify-content: center;
@@ -43,5 +45,4 @@
     font-size: 40px;
     font-weight: $font-weigth-600;
     flex-shrink: 0;
-    margin-top: 20px;
 }

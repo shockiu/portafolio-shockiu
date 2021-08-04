@@ -14,13 +14,13 @@
 .presentation__desc {
     font-size: 40px;
     font-weight: $font-weigth-700;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .presentation__parraf {
     font-size: 16px;
-    line-height: 20px;
-    margin-top: 20px;
+    line-height: 24px;
+    margin-top: 36px;
     width: 90%;
 }
 
@@ -32,4 +32,8 @@
     /*
     background: linear-gradient(45deg, $dark-purple, #1f0e35 90%);
     */
+}
+
+.presentation__actions {
+    margin-top: 20px;
 }

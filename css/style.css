@@ -160,7 +160,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px; }
+  margin-top: 40px;
+  height: 20vh; }
 
 .btn {
   width: 40%;
@@ -185,6 +186,14 @@ body {
   .btn__jasmine .btn__link {
     color: #a5c882; }
 
+.btn__presentation {
+  background-color: transparent;
+  border: 1px solid #5ab1bb;
+  height: 36px;
+  font-size: 16px; }
+  .btn__presentation .btn__link {
+    color: #5ab1bb; }
+
 .btn:hover {
   transform: translateY(-3px); }
 
@@ -198,6 +207,11 @@ body {
   .btn__pasticho:hover .btn__link {
     color: #0d0913; }
 
+.btn__presentation:hover {
+  background-color: #5ab1bb; }
+  .btn__presentation:hover .btn__link {
+    color: #1e152a; }
+
 .menu {
   display: grid;
   grid-template-columns: .2fr .6fr .2fr;
@@ -206,7 +220,7 @@ body {
     background-color: #7639c7;
     */
   align-items: center;
-  height: 60px; }
+  height: 80px; }
 
 .menu__list {
   display: flex;
@@ -224,11 +238,11 @@ body {
   color: #5ab1bb; }
 
 .menu__switch-theme {
-  text-align: center; }
+  place-self: center; }
 
 .menu__rocket {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 .presentation__title {
   display: flex;
@@ -244,12 +258,12 @@ body {
 .presentation__desc {
   font-size: 40px;
   font-weight: 700;
-  line-height: 40px; }
+  line-height: 50px; }
 
 .presentation__parraf {
   font-size: 16px;
-  line-height: 20px;
-  margin-top: 20px;
+  line-height: 24px;
+  margin-top: 36px;
   width: 90%; }
 
 .presentation__img {
@@ -261,10 +275,13 @@ body {
     background: linear-gradient(45deg, $dark-purple, #1f0e35 90%);
     */ }
 
+.presentation__actions {
+  margin-top: 20px; }
+
 .about__container {
   color: #1e152a;
-  background-color: #5ab1bb !important;
-  border-radius: 6px;
+  background-color: #5ab1bb;
+  border-radius: 4px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -302,7 +319,7 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 30px;
   row-gap: 30px;
   width: 100%; }
@@ -445,7 +462,8 @@ body {
   scroll-snap-align: start; }
 
 .presentation {
-  background-color: #1e152a; }
+  background-color: #1e152a;
+  height: 80vh; }
 
 .about {
   font-size: 20px;
@@ -453,10 +471,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 36px; }
 
 .projects {
-  background-color: #1e152a;
+  background-color: #0d0617;
   padding: 40px;
   display: grid;
   justify-content: center; }
@@ -466,8 +485,7 @@ body {
   color: #1e152a;
   font-size: 40px;
   font-weight: 600;
-  flex-shrink: 0;
-  margin-top: 20px; }
+  flex-shrink: 0; }
 
 /*
 BASE

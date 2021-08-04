@@ -14,17 +14,17 @@
             <div class="section presentation">
                 <nav class="menu">
                     <picture class="menu__rocket">
-                        <img src="./assets/startup.png" alt="" width="50">
+                        <img src="./assets/startup.png" alt="" width="40">
                     </picture>
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="" class="menu__link">/About</a> 
+                            <a href="#about" class="menu__link">/About</a> 
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">/Projects</a> 
+                            <a href="#projects" class="menu__link">/Projects</a> 
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">/Contact</a>
+                            <a href="#contact" class="menu__link">/Contact</a>
                         </li>
                         <li class="menu__item">
                             <a href="" class="menu__link">/Blog</a>
@@ -44,8 +44,13 @@
                 </nav>
                 <div class="presentation__title">
                     <div class="presentation__intro">
-                        <h1 class="presentation__desc">Front end Developer<span class="highlight"> Carlos Galeano</span></h1>
+                        <h1 class="presentation__desc">Front end Developer<br><span class="highlight">Carlos Galeano</span></h1>
                         <p class="presentation__parraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam illum. Adipisci odio voluptatum quas mollitia delectus culpa, vitae molestiae numquam</p>
+                        <div class="presentation__actions">
+                            <button class="btn btn__presentation">
+                                <a class="btn__link" href="#contact">Cuéntame tu idea</a>
+                            </button>
+                        </div>
                     </div>
     
                     <picture class="presentation__img" style="width: 300px; height: 300px;" >
@@ -117,17 +122,18 @@
                     -->
                 </div>
             </div>
-            <div class="section about js-scroll slide-right">
+            <div id="about" class="section about js-scroll slide-right">
                 <div class="about__container">
                     <picture class="about__thumbnail" >
                         <img class="about__img" src="./assets/student.jpg" alt="">
                     </picture>
-                    <h2 class="about__desc blue-cadet">                    
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur sed veniam adipisci delectus accusamus suscipit quidem aliquam culpa iste similique autem dolores esse dolore, magni id rerum. Ab, accusamus.
+                    <h2 class="about__desc blue-cadet"> 
+                        <i class="fas fa-code"></i>                   
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur sed veniam adipisci delectus accusamus suscipit quidem aliquam culpa iste similique autem dolores esse dolore, magni id rerum. Ab, accusamus.
                     </h2>
                 </div>
             </div>
-            <div class="section projects js-scroll slide-in-right">
+            <div id="projects" class="section projects js-scroll slide-in-right">
                 <h3 class="projects__title">Mis últimos proyectos</h3>
                 <div class="projects-container">
                     <div class="project__card">
@@ -263,7 +269,7 @@
                 </div>
             </div>
         </div>
-        <footer class="section contact js-scroll slide-in-left">
+        <footer id="contact" class="section contact js-scroll slide-in-left">
             <div class="contact-form">
                 <div class="contact__desc">
                     <h3 class="contact__title">¿Alguna idea en mente? ¡Cuéntamela! <i class="fab fa-telegram-plane"></i></h3>

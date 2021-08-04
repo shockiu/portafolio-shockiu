@@ -6,7 +6,7 @@
 }
 .projects-container {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 30px;
     row-gap: 30px;
     width: 100%;
