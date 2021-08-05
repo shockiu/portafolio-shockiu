@@ -238,24 +238,74 @@ body {
   .btn__presentation:hover .btn__link {
     color: #1e152a; }
 
+.hamburger {
+  display: none; }
+  @media (max-width: 650px) {
+    .hamburger {
+      display: block;
+      z-index: 2;
+      cursor: pointer;
+      position: fixed;
+      left: 80%; } }
+
 .menu {
   display: grid;
   grid-template-columns: .2fr .6fr .2fr;
   column-gap: 50px;
-  /*
-    background-color: #7639c7;
-    */
   align-items: center;
   height: 80px; }
+  @media (max-width: 650px) {
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+      position: relative; } }
 
 .menu__list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
+  @media (max-width: 650px) {
+    .menu__list {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100vh;
+      width: 100%;
+      top: 1px;
+      clip-path: circle(100px at 90% -20%);
+      -webkit-clip-path: circle(100px at 90% -20%);
+      transition: all 1s ease-out;
+      pointer-events: none; } }
+  .menu__list.open {
+    clip-path: circle(1000px at 90% -20%);
+    -webkit-clip-path: circle(1000px at 90% -20%);
+    pointer-events: all; }
 
 .menu__item {
   list-style: none; }
+  @media (max-width: 650px) {
+    .menu__item {
+      opacity: 0; } }
+
+.menu__item:nth-child(1) {
+  transition: all 0.5s ease 0.2s; }
+
+.menu__item:nth-child(2) {
+  transition: all 0.5s ease 0.4s; }
+
+.menu__item:nth-child(3) {
+  transition: all 0.5s ease 0.6s; }
+
+.menu__item:nth-child(4) {
+  transition: all 0.5s ease 0.8s; }
+
+.menu__item:nth-child(5) {
+  transition: all 0.5s ease 1s; }
+
+.fade {
+  opacity: 1; }
 
 .menu__link {
   text-decoration: none;
@@ -265,10 +315,16 @@ body {
 
 .menu__switch-theme {
   place-self: center; }
+  @media (max-width: 650px) {
+    .menu__switch-theme {
+      display: none; } }
 
 .menu__rocket {
   text-align: center;
   margin-top: 10px; }
+  @media (max-width: 650px) {
+    .menu__rocket {
+      margin-left: 80px; } }
 
 .presentation__title {
   display: flex;
