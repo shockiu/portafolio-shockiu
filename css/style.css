@@ -260,16 +260,44 @@ body {
       z-index: 2;
       cursor: pointer;
       position: fixed;
-      left: 80%; } }
+      left: 85%; } }
 
 .hamburger__1 {
-  color: white; }
+  width: 26px;
+  border-radius: 4px;
+  height: 3px;
+  background-color: white;
+  transition: all .6s ease-in-out; }
 
 .hamburger__2 {
-  color: white; }
+  width: 26px;
+  border-radius: 4px;
+  height: 3px;
+  background-color: white;
+  transition: all .6s ease-in-out; }
 
 .hamburger__3 {
-  color: white; }
+  width: 26px;
+  border-radius: 4px;
+  height: 3px;
+  background-color: white;
+  transition: all .6s ease-in-out; }
+
+.hamburger__1 {
+  transform: translateY(-6px); }
+
+.hamburger__3 {
+  transform: translateY(6px); }
+
+.active .hamburger__1 {
+  transform: rotate(45deg) translate(2px, 2px); }
+
+.active .hamburger__3 {
+  transform: rotate(-45deg) translate(2px, -2px); }
+
+.active .hamburger__2 {
+  transform: translateX(-20px);
+  opacity: 0; }
 
 .menu {
   display: grid;

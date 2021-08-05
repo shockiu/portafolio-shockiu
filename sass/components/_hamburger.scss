@@ -5,12 +5,41 @@
         z-index: 2;
         cursor: pointer;
         position: fixed;
-        left: 80%;
+        left: 85%;
     }
 }
 
 @for $index from 1 to 4 {
     .hamburger__#{$index} {
-        color: white;
+        width: 26px;
+        border-radius: 4px;
+        height: 3px;
+        background-color: white;
+        transition: all .6s ease-in-out;
+    }
+}
+
+.hamburger__1 {
+    transform: translateY(-6px);
+}
+
+.hamburger__3 {
+    transform: translateY(6px);
+}
+
+
+
+.active {
+    .hamburger__1 {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    
+    .hamburger__3  {
+        transform: rotate(-45deg) translate(2px, -2px);
+    }
+    
+    .hamburger__2 {
+        transform: translateX(-20px);
+        opacity: 0;
     }
 }

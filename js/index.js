@@ -48,6 +48,7 @@ const scrollAnimated = () => {
 const hamburgerAction = () => {
     hamburger.addEventListener('click', () => {
         menuList.classList.toggle('open');
+        hamburger.classList.toggle('active');
         menuLinks.forEach(link => {
           link.classList.toggle('fade');
         });
@@ -58,6 +59,7 @@ const menuItemsActions = () => {
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menuList.classList.remove('open');
+            hamburger.classList.remove('active');
             menuLinks.forEach(link => {
                 link.classList.remove('fade');
             });
