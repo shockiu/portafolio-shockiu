@@ -516,24 +516,48 @@ body {
 .contact-form {
   padding: 35px;
   display: grid;
+  grid-template-areas: "desc form";
   grid-template-columns: 1fr 1fr;
   margin-top: 20px; }
+  @media (max-width: 650px) {
+    .contact-form {
+      grid-template-areas: "desc" "form";
+      grid-template-columns: 1fr; } }
 
 .contact__desc {
   place-self: center;
-  font-size: 28px; }
+  font-size: 28px;
+  grid-area: desc; }
   .contact__desc .contact__title {
     font-size: 34px;
     line-height: 40px;
     margin-bottom: 16px; }
+    @media (max-width: 740px) {
+      .contact__desc .contact__title {
+        font-size: 28px;
+        line-height: 34px; } }
+    @media (max-width: 650px) {
+      .contact__desc .contact__title {
+        text-align: center; } }
   .contact__desc .contact__parraf {
     font-size: 18px;
     width: 70%;
     line-height: 25px; }
+    @media (max-width: 740px) {
+      .contact__desc .contact__parraf {
+        width: 80%;
+        font-size: 16px;
+        line-height: 22px; } }
+    @media (max-width: 650px) {
+      .contact__desc .contact__parraf {
+        text-align: center;
+        width: 100%;
+        padding: 10px 20px; } }
 
 .contact__form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  grid-area: form; }
 
 .contact__element {
   display: flex;
@@ -567,7 +591,10 @@ body {
 
 .btn-sumbit {
   height: 40px;
-  font: 16px; }
+  font-size: 16px; }
+  @media (max-width: 650px) {
+    .btn-sumbit {
+      width: 100%; } }
 
 .footer {
   display: flex;

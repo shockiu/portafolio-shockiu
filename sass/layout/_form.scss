@@ -1,28 +1,53 @@
 .contact-form {
     padding: 35px;
     display: grid;
+    grid-template-areas: "desc form";
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
+    @include break('middle') {
+        grid-template-areas: "desc"
+                             "form";
+        grid-template-columns: 1fr;
+    }
 }
 
 .contact__desc {
     place-self: center;
     font-size: 28px;
+    grid-area: desc;
     .contact__title {
         font-size: 34px;
         line-height: 40px;
         margin-bottom: 16px;
+        @include break('x-middle') {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        @include break('middle') {
+            text-align: center;
+        }
     }
     .contact__parraf {
         font-size: 18px;
         width: 70%;
         line-height: 25px;
+        @include break('x-middle') {
+            width: 80%;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        @include break('middle') {
+            text-align: center;
+            width: 100%;
+            padding: 10px 20px;
+        }
     }
 }
 
 .contact__form {
     display: flex;
     flex-direction: column;
+    grid-area: form;
 }
 
 .contact__element {
@@ -63,5 +88,8 @@
 
 .btn-sumbit {
     height: 40px;
-    font: 16px;
+    font-size: 16px;
+    @include break('middle'){
+        width: 100%;
+    }
 }
