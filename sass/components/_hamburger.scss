@@ -8,3 +8,9 @@
         left: 80%;
     }
 }
+
+@for $index from 1 to 4 {
+    .hamburger__#{$index} {
+        color: white;
+    }
+}

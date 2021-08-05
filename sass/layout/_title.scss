@@ -33,6 +33,9 @@
     @include break('middle') {
         padding: 0;
     }
+    @include break('small') {
+        width: 100%;
+    }
 }
 
 .presentation__desc {
@@ -55,6 +58,10 @@
     }
     @include break('middle') {
         text-align: center;
+    }
+    @include break('x-small') {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -84,6 +91,12 @@
         text-align: center;
         width: 100%;
     }
+    @include break('small'){
+        padding: 0 74px;
+    }
+    @include break('x-small') {
+        padding: 0 24px;
+    }
 }
 
 .presentation__img {
@@ -107,8 +120,17 @@
         width: 200px;
         height: 200px;
     }
+    @include break('x-small') {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .presentation__actions {
     margin-top: 20px;
+    @include break('small'){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

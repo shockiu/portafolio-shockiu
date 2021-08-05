@@ -27,10 +27,12 @@
     transition: all .6s;
 }
 
+
 .btn__presentation {
     background-color: transparent;
     border: 1px solid $cadet-blue;
     height: 36px;
+    font-weight: $font-weigth-600;
     .btn__link {
         color: $cadet-blue;
     }
@@ -53,6 +55,20 @@
     @include break('middle') {
         width: 100%;
         font-size: 14px;
+    }
+    @include break('small'){
+        width: 70%;
+    }
+}
+
+.btn-sumbit {
+    height: 40px;
+    font-size: 16px;
+    font-weight: $font-weigth-600;
+    color: $cadet-blue;
+    background-color: $dark-purple;
+    @include break('middle'){
+        width: 100%;
     }
 }
 

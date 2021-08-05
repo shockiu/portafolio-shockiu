@@ -26,6 +26,9 @@
         @include break('middle') {
             text-align: center;
         }
+        @include break('x-small'){
+            font-size: 20px;
+        }
     }
     .contact__parraf {
         font-size: 18px;
@@ -40,6 +43,9 @@
             text-align: center;
             width: 100%;
             padding: 10px 20px;
+        }
+        @include break('x-small') {
+            font-size: 14px;
         }
     }
 }
@@ -86,10 +92,3 @@
     border-color: rgb(117, 50, 50);
 }
 
-.btn-sumbit {
-    height: 40px;
-    font-size: 16px;
-    @include break('middle'){
-        width: 100%;
-    }
-}
