@@ -17,8 +17,7 @@
   font-family: "Catamaran", sans-serif; }
 
 body {
-  background-color: #1e152a;
-  color: #5ab1bb; }
+  background-color: #0D0D0D; }
 
 #planet {
   animation: rotatePlanet 5s infinite linear;
@@ -104,6 +103,12 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes backgroundSize {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
+
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms; }
@@ -112,7 +117,7 @@ body {
   opacity: 1; }
 
 .highlight {
-  background-image: linear-gradient(#f7dd72, #f7dd72);
+  background-image: linear-gradient(to right, #F05CF2, #9407F2, #262DA6);
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 100% 2px;
@@ -124,7 +129,7 @@ body {
   transition: background-position .5s, background-size .5s ease-in .5s; }
 
 .blue-cadet {
-  color: #1e152a; }
+  color: #0D0D0D; }
 
 .checkbox {
   opacity: 0;
@@ -178,28 +183,29 @@ body {
   padding: 2px;
   transition: all .5s; }
   .btn .btn__link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #e8e7e7; }
 
 .btn__pasticho {
-  background-color: #a5c882;
+  background-color: #5327F2;
   transition: all .6s; }
   .btn__pasticho .btn__link {
-    color: #1e152a; }
+    color: #0D0D0D; }
 
 .btn__jasmine {
   background-color: transparent;
-  border: 1px solid #a5c882;
+  border: 1px solid #5327F2;
   transition: all .6s; }
   .btn__jasmine .btn__link {
-    color: #a5c882; }
+    color: #5327F2; }
 
 .btn__presentation {
-  background-color: transparent;
-  border: 1px solid #5ab1bb;
+  background: linear-gradient(to right, #F05CF2, #9407F2, #262DA6, #9407F2, #F05CF2);
   height: 36px;
-  font-weight: 600; }
+  font-weight: 600;
+  background-size: 400%; }
   .btn__presentation .btn__link {
-    color: #5ab1bb; }
+    color: #e8e7e7; }
   @media (max-width: 1440px) {
     .btn__presentation {
       font-size: 18px;
@@ -228,8 +234,8 @@ body {
   height: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: #5ab1bb;
-  background-color: #1e152a; }
+  color: #262DA6;
+  background-color: #0D0D0D; }
   @media (max-width: 650px) {
     .btn-sumbit {
       width: 100%; } }
@@ -248,19 +254,17 @@ body {
     color: #0d0913; }
 
 .btn__presentation:hover {
-  background-color: #5ab1bb; }
-  .btn__presentation:hover .btn__link {
-    color: #1e152a; }
+  background-color: #262DA6;
+  animation: backgroundSize 8s linear infinite; }
 
 .hamburger {
   display: none; }
   @media (max-width: 650px) {
     .hamburger {
       display: block;
-      z-index: 2;
+      z-index: 3;
       cursor: pointer;
-      position: fixed;
-      left: 85%; } }
+      margin-right: 50px; } }
 
 .hamburger__1 {
   width: 26px;
@@ -284,10 +288,10 @@ body {
   transition: all .6s ease-in-out; }
 
 .hamburger__1 {
-  transform: translateY(-6px); }
+  transform: translateY(-6px) translateX(-5px); }
 
 .hamburger__3 {
-  transform: translateY(6px); }
+  transform: translateY(6px) translateX(-3px); }
 
 .active .hamburger__1 {
   transform: rotate(45deg) translate(2px, 2px); }
@@ -304,12 +308,15 @@ body {
   grid-template-columns: .2fr .6fr .2fr;
   column-gap: 50px;
   align-items: center;
-  height: 80px; }
+  height: 70px; }
   @media (max-width: 650px) {
     .menu {
       display: flex;
-      justify-content: flex-start;
-      position: relative; } }
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1; } }
 
 .menu__list {
   display: flex;
@@ -329,12 +336,12 @@ body {
       -webkit-clip-path: circle(100px at 90% -20%);
       transition: all 1s ease-out;
       pointer-events: none;
-      background-color: #5ab1bb; } }
+      background-color: #262DA6; } }
   .menu__list.open {
     clip-path: circle(1000px at 90% -20%);
     -webkit-clip-path: circle(1000px at 90% -20%);
     pointer-events: all;
-    z-index: 1; }
+    z-index: 2; }
 
 .menu__item {
   list-style: none; }
@@ -364,10 +371,10 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  color: #5ab1bb; }
+  color: #e8e7e7; }
   @media (max-width: 650px) {
     .menu__link {
-      color: #1e152a; } }
+      color: #0D0D0D; } }
 
 .menu__switch-theme {
   place-self: center; }
@@ -380,7 +387,7 @@ body {
   margin-top: 10px; }
   @media (max-width: 650px) {
     .menu__rocket {
-      margin-left: 80px; } }
+      margin-left: 50px; } }
 
 .presentation__title {
   display: flex;
@@ -397,7 +404,8 @@ body {
       justify-content: space-between; } }
   @media (max-width: 650px) {
     .presentation__title {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 90px; } }
 
 .presentation__intro {
   width: 60%; }
@@ -421,7 +429,8 @@ body {
       width: 100%; } }
 
 .presentation__desc {
-  font-weight: 700; }
+  font-weight: 700;
+  color: #e8e7e7; }
   @media (max-width: 1440px) {
     .presentation__desc {
       font-size: 52px;
@@ -448,7 +457,8 @@ body {
 
 .presentation__parraf {
   line-height: 24px;
-  margin-top: 36px; }
+  margin-top: 36px;
+  color: #e8e7e7; }
   @media (max-width: 1440px) {
     .presentation__parraf {
       font-size: 18px;
@@ -514,8 +524,8 @@ body {
       justify-content: center; } }
 
 .about__container {
-  color: #1e152a;
-  background-color: #5ab1bb;
+  color: #0D0D0D;
+  background-color: #262DA6;
   border-radius: 4px;
   text-align: center;
   display: grid;
@@ -550,7 +560,8 @@ body {
   font-size: 32px;
   margin-top: 14px;
   text-align: center;
-  margin-bottom: 26px; }
+  margin-bottom: 26px;
+  color: #e8e7e7; }
 
 .projects-container {
   display: grid;
@@ -678,7 +689,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #5ab1bb;
+  color: #262DA6;
   background-color: #140e1d; }
   .footer .menu__footer {
     display: flex;
@@ -692,7 +703,7 @@ body {
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
-      color: #5ab1bb; }
+      color: #262DA6; }
   .footer .social-media {
     font-size: 12px;
     margin-top: 10px;
@@ -723,7 +734,7 @@ body {
   scroll-snap-align: start; }
 
 .presentation {
-  background-color: #1e152a; }
+  background-color: #0D0D0D; }
 
 .about {
   font-size: 20px;
@@ -741,8 +752,8 @@ body {
   justify-content: center; }
 
 .contact {
-  background-color: #5ab1bb;
-  color: #1e152a;
+  background-color: #262DA6;
+  color: #0D0D0D;
   font-size: 40px;
   font-weight: 600;
   flex-shrink: 0; }

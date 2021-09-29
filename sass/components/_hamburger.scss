@@ -2,10 +2,9 @@
     display: none;
     @include break('middle') {
         display: block;
-        z-index: 2;
+        z-index: 3;
         cursor: pointer;
-        position: fixed;
-        left: 85%;
+        margin-right: 50px;
     }
 }
 
@@ -20,11 +19,11 @@
 }
 
 .hamburger__1 {
-    transform: translateY(-6px);
+    transform: translateY(-6px) translateX(-5px);
 }
 
 .hamburger__3 {
-    transform: translateY(6px);
+    transform: translateY(6px) translateX(-3px);
 }
 
 

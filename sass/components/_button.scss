@@ -7,6 +7,7 @@
     transition: all .5s;
     .btn__link {
         text-decoration: none;
+        color: $white-special;
     }
    
 }
@@ -29,12 +30,12 @@
 
 
 .btn__presentation {
-    background-color: transparent;
-    border: 1px solid $cadet-blue;
+    background: linear-gradient(to right,#F05CF2, #9407F2, #262DA6, #9407F2, #F05CF2);
     height: 36px;
     font-weight: $font-weigth-600;
+    background-size: 400%;
     .btn__link {
-        color: $cadet-blue;
+        color: $white-special;
     }
     @include break('lg-large') {
         font-size: 18px;
@@ -93,7 +94,5 @@
 
 .btn__presentation:hover {
     background-color: $cadet-blue;
-    .btn__link {
-        color: $dark-purple;
-    }
+    animation: backgroundSize 8s linear infinite;
 }

@@ -112,3 +112,12 @@
       opacity: 1;
     }
 }
+
+@keyframes backgroundSize {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
