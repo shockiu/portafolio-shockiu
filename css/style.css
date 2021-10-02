@@ -190,14 +190,14 @@ body {
   background-color: #5327F2;
   transition: all .6s; }
   .btn__pasticho .btn__link {
-    color: #0D0D0D; }
+    color: #e8e7e7; }
 
 .btn__jasmine {
   background-color: transparent;
   border: 1px solid #5327F2;
   transition: all .6s; }
   .btn__jasmine .btn__link {
-    color: #5327F2; }
+    color: #e8e7e7; }
 
 .btn__presentation {
   background: linear-gradient(to right, #F05CF2, #9407F2, #262DA6, #9407F2, #F05CF2);
@@ -234,8 +234,9 @@ body {
   height: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: #262DA6;
-  background-color: #0D0D0D; }
+  color: #e8e7e7;
+  background-color: #0D0D0D;
+  width: 100%; }
   @media (max-width: 650px) {
     .btn-sumbit {
       width: 100%; } }
@@ -244,14 +245,11 @@ body {
   transform: translateY(-3px); }
 
 .btn__jasmine:hover {
-  background-color: #7ca752; }
-  .btn__jasmine:hover .btn__link {
-    color: #0d0913; }
+  background-color: #5327F2; }
 
 .btn__pasticho:hover {
-  background-color: #7ca752; }
-  .btn__pasticho:hover .btn__link {
-    color: #0d0913; }
+  background-color: transparent;
+  border: 1px solid #5327F2; }
 
 .btn__presentation:hover {
   background-color: #262DA6;
@@ -583,21 +581,21 @@ body {
   width: 100%;
   height: 100%; }
 
-.project__body .project__title {
-  text-transform: capitalize;
-  font-size: 16px;
-  margin-top: 10px; }
-
-.project__body .project__desc {
-  line-height: 20px;
-  font-size: 14px;
-  margin-top: 10px; }
-
-.project__body .project__actions {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
+.project__body {
+  color: #e8e7e7; }
+  .project__body .project__title {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 10px; }
+  .project__body .project__desc {
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 10px; }
+  .project__body .project__actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
 
 .project__thumbnail:hover {
   transform: rotate(-2deg) translateY(-5px) scale(1.025); }
@@ -610,7 +608,7 @@ body {
   margin-top: 20px; }
   @media (max-width: 650px) {
     .contact-form {
-      grid-template-areas: "desc" "form";
+      grid-template-areas: "desc" "form";
       grid-template-columns: 1fr; } }
 
 .contact__desc {
@@ -746,7 +744,7 @@ body {
   margin-top: 80px; }
 
 .projects {
-  background-color: #0d0617;
+  background-color: #0D0D0D;
   padding: 40px;
   display: grid;
   justify-content: center; }

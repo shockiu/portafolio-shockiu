@@ -16,14 +16,14 @@
     background-color: $pistachio;
     transition: all .6s;
     .btn__link {
-        color: $dark-purple;
+        color: $white-special;
     }
 }
 .btn__jasmine {
     background-color: transparent;
     border: 1px solid $pistachio;
     .btn__link {
-        color: $pistachio;
+        color: $white-special;
     }
     transition: all .6s;
 }
@@ -66,8 +66,9 @@
     height: 40px;
     font-size: 16px;
     font-weight: $font-weigth-600;
-    color: $cadet-blue;
+    color: $white-special;
     background-color: $dark-purple;
+    width: 100%;
     @include break('middle'){
         width: 100%;
     }
@@ -79,17 +80,12 @@
 
 
 .btn__jasmine:hover {
-    background-color: #7ca752;
-    .btn__link {
-        color: #0d0913;
-    }
+    background-color: $pistachio;
 }
 
 .btn__pasticho:hover {
-    background-color: #7ca752;
-    .btn__link {
-        color: #0d0913;
-    }
+    background-color: transparent;
+    border: 1px solid $pistachio; 
 }
 
 .btn__presentation:hover {
