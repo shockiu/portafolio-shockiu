@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $cadet-blue;
-    background-color: #140e1d;
+    color: $white-special;
+    background-color: $dark-purple;
     .menu__footer {
         display: flex;
         justify-content: space-around;
@@ -18,7 +18,7 @@
             text-decoration: none;
             font-size: 12px;
             font-weight: $font-weigth-600;
-            color: $cadet-blue;
+            color: $white-special;
         }
     }
     .social-media {
@@ -28,7 +28,7 @@
     }
     .divider {
         width: 90%;
-        border: .25px solid #4e6766;
+        border: .25px solid $white-special;
     }
     .by-author {
         font-size: 12px;

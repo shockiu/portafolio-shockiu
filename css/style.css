@@ -129,7 +129,7 @@ body {
   transition: background-position .5s, background-size .5s ease-in .5s; }
 
 .blue-cadet {
-  color: #0D0D0D; }
+  color: #e8e7e7; }
 
 .checkbox {
   opacity: 0;
@@ -605,7 +605,8 @@ body {
   display: grid;
   grid-template-areas: "desc form";
   grid-template-columns: 1fr 1fr;
-  margin-top: 20px; }
+  margin-top: 20px;
+  gap: 24px; }
   @media (max-width: 650px) {
     .contact-form {
       grid-template-areas: "desc" "form";
@@ -687,8 +688,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #262DA6;
-  background-color: #140e1d; }
+  color: #e8e7e7;
+  background-color: #0D0D0D; }
   .footer .menu__footer {
     display: flex;
     justify-content: space-around;
@@ -701,14 +702,14 @@ body {
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
-      color: #262DA6; }
+      color: #e8e7e7; }
   .footer .social-media {
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 10px; }
   .footer .divider {
     width: 90%;
-    border: .25px solid #4e6766; }
+    border: 0.25px solid #e8e7e7; }
   .footer .by-author {
     font-size: 12px;
     margin-top: 10px;
@@ -741,7 +742,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
 .projects {
   background-color: #0D0D0D;
@@ -751,7 +753,7 @@ body {
 
 .contact {
   background-color: #262DA6;
-  color: #0D0D0D;
+  color: #e8e7e7;
   font-size: 40px;
   font-weight: 600;
   flex-shrink: 0; }

@@ -4,6 +4,7 @@
     grid-template-areas: "desc form";
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
+    gap: 24px;
     @include break('middle') {
         grid-template-areas: "desc"
                              "form";
