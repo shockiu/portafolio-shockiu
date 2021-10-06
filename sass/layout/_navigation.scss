@@ -36,8 +36,8 @@
         background-color: $cadet-blue;
     }
     &.open {
-        clip-path: circle(1000px at 90% -20%);
-        -webkit-clip-path: circle(1000px at 90% -20%);
+        clip-path: circle(1400px at 90% -20%);
+        -webkit-clip-path: circle(1400px at 90% -20%);
         pointer-events: all;
         z-index: 2;
     }
