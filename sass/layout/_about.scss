@@ -10,6 +10,9 @@
     -webkit-box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.57);
     box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.57);
+    @include break('x-middle') {
+        font-size: 12px;
+    }
     .about__thumbnail {
         width: 100%;
     }
@@ -31,7 +34,10 @@
         font-size: 16px;
         text-align: left;
         padding-left: 20px;
-        line-height: 25px;  
+        line-height: 25px;
+        @include break('x-middle') {
+            font-size: 12px;
+        }
     }
 }
 

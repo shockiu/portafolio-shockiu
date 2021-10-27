@@ -73,5 +73,3 @@ const main = () => {
     menuItemsActions();
 }
 main();
-
-console.log('hola');
