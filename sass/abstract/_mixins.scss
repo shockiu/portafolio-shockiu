@@ -8,11 +8,6 @@ $breakpoints: (
     'lg-large': 1440px,
 )!default;
 
-/*
-    1045px
-    740
-    620
-*/
 
 @mixin break($breakpoint) {
     @if map-has-key($breakpoints , $breakpoint) {
