@@ -137,3 +137,21 @@
         justify-content: center;
     }
 }
+
+.about__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    color: $white-special;
+    @include break('lg-large') {
+        justify-content: space-around;
+    }
+    @include break('large') {
+        justify-content: space-between;
+    }
+    @include break('middle') {
+        flex-direction: column;
+
+    }
+    transition: all 2s;
+}

@@ -516,9 +516,23 @@ body {
       display: flex;
       justify-content: center; } }
 
+.about__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  color: #e8e7e7;
+  transition: all 2s; }
+  @media (max-width: 1440px) {
+    .about__title {
+      justify-content: space-around; } }
+  @media (max-width: 1024px) {
+    .about__title {
+      justify-content: space-between; } }
+  @media (max-width: 650px) {
+    .about__title {
+      flex-direction: column; } }
+
 .about__container {
-  color: #0D0D0D;
-  background-color: #262DA6;
   border-radius: 4px;
   text-align: center;
   display: grid;
@@ -527,10 +541,12 @@ body {
   width: 70%;
   -webkit-box-shadow: 0px 6px 20px -1px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 6px 20px -1px rgba(0, 0, 0, 0.57);
-  box-shadow: 0px 6px 20px -1px rgba(0, 0, 0, 0.57); }
+  box-shadow: 0px 6px 20px -1px rgba(0, 0, 0, 0.57);
+  transition: 2s all; }
   @media (max-width: 740px) {
     .about__container {
-      font-size: 12px; } }
+      font-size: 12px;
+      grid-template-columns: 1fr; } }
   .about__container .about__thumbnail {
     width: 100%; }
   .about__container .about__img {
@@ -541,6 +557,7 @@ body {
   .about__container .about__desc {
     display: flex;
     justify-content: start;
+    flex-direction: column;
     align-items: center;
     font-size: 16px;
     text-align: left;
@@ -550,6 +567,14 @@ body {
       .about__container .about__desc {
         font-size: 12px;
         line-height: 20px; } }
+  .about__container .ability-desc {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 100%;
+    background-color: #262DA6;
+    margin: 6px;
+    border-radius: 4px; }
 
 .projects__title {
   font-size: 32px;
@@ -745,7 +770,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 80px; }
 
 .projects {
@@ -760,20 +785,3 @@ body {
   font-size: 40px;
   font-weight: 600;
   flex-shrink: 0; }
-
-/*
-BASE
-
-@import "./base/body";
-
-COMPONENTS
-@import "./components/accordoin";
-@import "./components/title";
-
-LAYOUT
-@import "./layout/hero";
-@import "./layout/footer";
-
-PAGES
-@import "./pages/faq";
-*/
