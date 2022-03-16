@@ -25,6 +25,9 @@
         font-size: 12px;
         margin-top: 10px;
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .divider {
         width: 90%;
