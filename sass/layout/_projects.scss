@@ -33,6 +33,7 @@
 .project__img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .project__body {
@@ -44,8 +45,11 @@
     }
     .project__desc {
         line-height: 20px;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 10px;
+        @include break('middle') {
+            font-size: 14px;
+        }
     }
     .project__actions{
         margin-top: 10px;
