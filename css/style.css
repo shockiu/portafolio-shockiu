@@ -300,6 +300,72 @@ body {
   transform: translateX(-20px);
   opacity: 0; }
 
+.timeline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
+.timeline__box {
+  width: 800px;
+  color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #262DA6; }
+  @media (max-width: 900px) {
+    .timeline__box {
+      padding-left: 10%;
+      padding-right: 10%; } }
+
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid #094a68;
+  padding: 10px 5px; }
+
+.timeline ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: .5s; }
+
+.timeline ul li span {
+  display: inline-block;
+  background-color: #1685b8;
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 15px;
+  text-align: center; }
+
+.timeline ul li .content h3 {
+  color: #34ace0;
+  font-size: 17px;
+  padding-top: 5px; }
+
+.timeline ul li .content p {
+  padding: 5px 0px 15px 0px;
+  font-size: 15px; }
+
+.timeline ul li:before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #34ace0;
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: .5s; }
+
+.timeline ul li:hover:before {
+  background-color: white; }
+
+@media (max-width: 300px) {
+  .timeline {
+    width: 100%;
+    padding: 30px 5px 30px 10px; }
+  .timeline ul li .content h3 {
+    color: #34ace0;
+    font-size: 15px; } }
+
 .menu {
   display: grid;
   grid-template-columns: .2fr .6fr .2fr;
