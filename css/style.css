@@ -201,6 +201,10 @@ body {
   background-size: 400%; }
   .btn__presentation .btn__link {
     color: #e8e7e7; }
+  @media (max-width: 1920px) {
+    .btn__presentation {
+      font-size: 18px;
+      height: 40px; } }
   @media (max-width: 1440px) {
     .btn__presentation {
       font-size: 18px;
@@ -389,6 +393,9 @@ body {
   padding-left: 50px;
   margin-top: 50px;
   transition: all 2s; }
+  @media (max-width: 1920px) {
+    .presentation__title {
+      justify-content: space-around; } }
   @media (max-width: 1440px) {
     .presentation__title {
       justify-content: space-around; } }
@@ -424,6 +431,10 @@ body {
 .presentation__desc {
   font-weight: 700;
   color: #e8e7e7; }
+  @media (max-width: 1920px) {
+    .presentation__desc {
+      font-size: 52px;
+      line-height: 62px; } }
   @media (max-width: 1440px) {
     .presentation__desc {
       font-size: 52px;
@@ -452,6 +463,10 @@ body {
   line-height: 24px;
   margin-top: 36px;
   color: #e8e7e7; }
+  @media (max-width: 1920px) {
+    .presentation__parraf {
+      font-size: 18px;
+      width: 70%; } }
   @media (max-width: 1440px) {
     .presentation__parraf {
       font-size: 18px;
@@ -488,6 +503,10 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 2s; }
+  @media (max-width: 1920px) {
+    .presentation__img {
+      width: 420px;
+      height: 420px; } }
   @media (max-width: 1440px) {
     .presentation__img {
       width: 350px;

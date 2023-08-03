@@ -37,6 +37,10 @@
     .btn__link {
         color: $white-special;
     }
+    @include break('xxl-large') {
+        font-size: 18px;
+        height: 40px;
+    }
     @include break('lg-large') {
         font-size: 18px;
         height: 40px;
